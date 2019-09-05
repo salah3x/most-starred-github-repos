@@ -33,6 +33,13 @@ Run `ionic build` to build the project. The build artifacts will be stored in th
 
 > Use the `--prod` flag for a production build.
 
+## Web deployment
+
+- Install firebase tools: `npm install -g firebase-tools`
+- Authenticate the cli and access Firebase projects: `firebase login`
+- Deploy the Ionic PWA to Firebase: `firebase deploy`
+  > The deployment phase will automatically lint and build the project first.
+
 ## Android/iOS
 
 - First, build the app: `ionic build --prod`
@@ -64,6 +71,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Ionic CLI use `ionic help` or go check out the [Ionic CLI README](https://ionicframework.com/docs/cli).
+
+To get started with firebase go to the [firebase console](https://console.firebase.google.com/) and create your first project.
+
+To get more information about firebase cli use `firebase --help` or visit [the official docs](https://firebase.google.com/docs/cli/).
 
 ---
 
