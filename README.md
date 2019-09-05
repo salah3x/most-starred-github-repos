@@ -3,6 +3,7 @@
   <h2>Most Starred Github Repos</h2>
 
 ![GitHub release](https://img.shields.io/github/release/salah3x/most-starred-github-repos.svg?color=%23f441be)
+[![Build Status](https://travis-ci.org/salah3x/most-starred-github-repos.svg?branch=master)](https://travis-ci.org/salah3x/most-starred-github-repos)
 ![GitHub](https://img.shields.io/github/license/salah3x/most-starred-github-repos.svg?color=%232196F3)
 
 </div>
