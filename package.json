@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/salah3x/most-starred-github-repos"
   },
-  "homepage": "https://github.com/salah3x/most-starred-github-repos",
+  "homepage": "https://most-starred-github-repos.web.app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
