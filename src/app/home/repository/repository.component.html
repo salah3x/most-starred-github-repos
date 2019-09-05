@@ -1,0 +1,26 @@
+<ion-item lines="none">
+  <ion-avatar slot="start">
+    <ion-img
+      [src]="repo?.owner.avatar_url"
+      [title]="repo?.owner.login"
+    ></ion-img>
+  </ion-avatar>
+  <ion-label>
+    <a [href]="repo?.html_url">{{ repo?.name }}</a>
+  </ion-label>
+  <br />
+  <ion-button slot="end" title="Stars">
+    {{ repo?.stargazers_count }}
+    <ion-icon name="star" slot="end"></ion-icon>
+  </ion-button>
+  <ion-button slot="end" title="Open issues">
+    {{ repo?.open_issues }}
+    <ion-icon name="bug" slot="end"></ion-icon>
+  </ion-button>
+</ion-item>
+<p class="ion-padding">{{ repo?.description }}</p>
+<ion-note class="ion-padding">
+  Submitted {{ repo?.created_at | timeAgo }} by
+  <a [href]="repo?.owner.html_url">{{ repo?.owner.login }}</a>
+</ion-note>
+<ion-item-divider></ion-item-divider>

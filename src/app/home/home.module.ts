@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { RepositoriesService } from './repositories.service';
+import { RepositoryComponent } from './repository/repository.component';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   imports: [
@@ -19,7 +21,7 @@ import { RepositoriesService } from './repositories.service';
       }
     ])
   ],
-  declarations: [HomePage],
+  declarations: [HomePage, RepositoryComponent, TimeAgoPipe],
   providers: [RepositoriesService]
 })
 export class HomePageModule {}
