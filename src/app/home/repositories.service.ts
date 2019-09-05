@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ToastController } from '@ionic/angular';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 import { Repository } from './repository.model';
@@ -22,7 +22,7 @@ export class RepositoriesService {
    * Get the most starred github repos created in the last 30 days.
    * @param page The page number
    */
-  getRecentRepos(page: number = 1): Observable<Repository[]> {
+  getRecentRepos(page: number = 1): Promise<Repository[]> {
     const lastMonth = new Date(new Date().setMonth(new Date().getMonth() - 1))
       .toISOString()
       .split('T')[0];
@@ -59,13 +59,14 @@ export class RepositoriesService {
         catchError(err => {
           this.toastCtrl
             .create({
-              header: 'An Error Occurred',
-              message: err.error ? err.error.message : err.message,
+              message:
+                'Error: ' + (err.error ? err.error.message : err.message),
               duration: 2000
             })
             .then(el => el.present());
           return of([]);
         })
-      );
+      )
+      .toPromise();
   }
 }
