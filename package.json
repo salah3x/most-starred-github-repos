@@ -1,7 +1,7 @@
 {
   "name": "most-starred-github-repos",
   "description": "A demo web app that lists the most starred Github repos that were created in the last 30 days.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "Salah E. Loukili",
     "email": "salah.loukili@gmail.com",
