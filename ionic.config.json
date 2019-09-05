@@ -1,0 +1,7 @@
+{
+  "name": "most-starred-github-repos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

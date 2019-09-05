@@ -1,0 +1,7 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "most-starred-github-repos",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
