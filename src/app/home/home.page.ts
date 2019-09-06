@@ -11,11 +11,15 @@ import { Repository } from './repository.model';
 export class HomePage implements OnInit {
   repos: Repository[];
   page = 1;
+  loading = true;
 
   constructor(private service: RepositoriesService) {}
 
   ngOnInit() {
-    this.service.getRecentRepos().then(rs => (this.repos = rs));
+    this.service.getRecentRepos().then(rs => {
+      this.loading = false;
+      this.repos = rs;
+    });
   }
 
   loadRepos(event: any) {

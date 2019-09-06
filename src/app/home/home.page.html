@@ -10,6 +10,13 @@
   <ion-grid>
     <ion-row>
       <ion-col size-md="6" offset-md="3">
+        <div class="ion-text-center">
+          <ion-spinner
+            *ngIf="loading"
+            color="primary"
+            class="ion-margin-top"
+          ></ion-spinner>
+        </div>
         <ion-list>
           <app-repository
             *ngFor="let repo of repos"
