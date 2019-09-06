@@ -1,13 +1,11 @@
-<ion-item lines="none">
+<ion-item lines="none" [href]="repo?.html_url">
   <ion-avatar slot="start">
     <ion-img
       [src]="repo?.owner.avatar_url"
       [title]="repo?.owner.login"
     ></ion-img>
   </ion-avatar>
-  <ion-label>
-    <a [href]="repo?.html_url">{{ repo?.name }}</a>
-  </ion-label>
+  <ion-label>{{ repo?.name }}</ion-label>
   <br />
   <ion-button slot="end" title="Stars">
     {{ repo?.stargazers_count }}
