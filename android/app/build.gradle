@@ -6,8 +6,8 @@ android {
         applicationId "com.github.salah3x.mostStarredGithubRepos"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 3
-        versionName "0.2.0"
+        versionCode 4
+        versionName "0.2.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
